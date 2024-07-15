@@ -1,0 +1,22 @@
+/* Contact Section Styles */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #00bfff;
+}
+
+.contact-links a i {
+  margin-right: 5px;
+}

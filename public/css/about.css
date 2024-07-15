@@ -1,0 +1,46 @@
+/* about Section Styles */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px; /* Limit content width on larger screens */
+  padding: 1.5rem;
+}
+.gradient-text {
+  font-size: 3em;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about p {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  /* Style your button here (optional) */
+  background-color: rgb(230, 34, 77);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+.about .btn:hover,
+.services .btn:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+}

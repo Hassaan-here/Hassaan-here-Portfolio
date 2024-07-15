@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Home Page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="index_style.css" />
+    <link rel="stylesheet" href="./public/css/navbar.css" />
+    <link rel="stylesheet" href="./public/css/home.css" />
+    <link rel="stylesheet" href="./public/css/about.css" />
+    <link rel="stylesheet" href="./public/css/skills.css" />
+    <link rel="stylesheet" href="./public/css/animation.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- js -->
+    <script src="./public/js/navbar.js" defer></script>
+    <script src="./public/js/observer.js"></script>
+    <!-- typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+
+  <body>
+    <section class="navigation">
+      <header class="header">
+        <h1 class="gradient-text">Hassaan</h1>
+        <label class="burger" for="burger">
+          <input
+            type="checkbox"
+            id="burger"
+            aria-expanded="false"
+            aria-controls="navigation"
+          />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="navbar" id="navbar">
+          <label class="cross" for="cross">
+            <input
+              type="checkbox"
+              id="cross"
+              aria-expanded="true"
+              aria-controls="navigation"
+            />
+            <span></span>
+            <span></span>
+          </label>
+          <ul>
+            <li>
+              <a href="#"><span class="fas fa-home"></span>HOME</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-info-circle"></span> ABOUT</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-cogs"></span>SKILLS</a>
+            </li>
+            <li>
+              <a href="#"><span class="fas fa-address-card"></span>CONTACT</a>
+            </li>
+            <button class="Btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+                class="svgIcon"
+              >
+                <path
+                  d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                ></path>
+              </svg>
+              <span class="icon2"></span>
+            </button>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="home-content hidden">
+        <h2 class="gradient-text">Hi,<span class="typed-text"></span></h2>
+        <p>
+          I am a passionate Full stack web developer based in Gujranwala,
+          Pakistan. <br />I specialize in creating user-friendly and visually
+          appealing websites and applications.
+        </p>
+      </div>
+      <a href="#work" class="btn">See My Work</a>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <div class="about-content hidden">
+        <h2 class="gradient-text">About Me</h2>
+        <p>
+          I'm currently pursuing my BS in Computer Science at the University of
+          the Punjab. With a strong foundation in front-end and back-end
+          development. I am passionate about creating user-friendly and visually
+          appealing websites and applications.
+        </p>
+        <p>
+          In addition to technical skills, I value teamwork, communication, and
+          continuous learning.
+        </p>
+      </div>
+      <a href="#work" class="btn">See My Work</a>
+    </section>
+    <!-- services
+    <section class="services hidden">
+      <h2>WHAT I DO</h2>
+      <div class="services-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="title">Front-End</p>
+              <p>Hover Me</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="title">BACK</p>
+              <p>Leave Me</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="title">Back-End</p>
+              <p>Hover Me</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="title">BACK</p>
+              <p>Leave Me</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#contact" class="btn">Let's Collaborate</a>
+    </section> -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skill">
+            <h3>Front-end Development</h3>
+            <ul>
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React.js & Vue.js</li>
+              <li>Bootstrap & Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Back-end Development</h3>
+            <ul>
+              <li>PHP & Laravel</li>
+              <li>MySQL & MongoDB</li>
+              <li>RESTful APIs</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Tools & Others</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Adobe XD & Figma</li>
+              <li>SEO Optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          Feel free to reach out to me for collaborations, job opportunities, or
+          just to say hello!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:youremail@example.com"
+            ><i class="fas fa-envelope"></i> Email</a
+          >
+          <a href="https://linkedin.com/your-profile" target="_blank"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+          <a href="https://github.com/yourusername" target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!--Script -->
+    <script>
+      var typed = new Typed(".typed-text", {
+        strings: ["I'm Hassaan Muneer", "I'm a Web Developer"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

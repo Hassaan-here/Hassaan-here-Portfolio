@@ -1,0 +1,66 @@
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom Navbar
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-center {
+  0% {
+    -webkit-transform: translate(-50%, 50%) scale(0);
+    transform: translate(-50%, 50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-center {
+  0% {
+    -webkit-transform: translate(-50%, 50%) scale(0);
+    transform: translate(-50%, 50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+/* Fade In Effect for text */
+@-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* transition Animation for Visibility */
+.hidden {
+  opacity: 0;
+}
+.visible {
+  -webkit-animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  opacity: 1;
+  transition: ease-in 1s;
+}
