@@ -1,0 +1,115 @@
+/* footer */
+footer {
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  background-color: black;
+}
+
+footer .container {
+  display: flex;
+  color: #ffffff;
+  text-align: left;
+  justify-content: space-between;
+  padding: 10px;
+  bottom: 0;
+}
+.container .col {
+  display: flex;
+  flex-direction: column;
+}
+
+footer span {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer span:first-child {
+  font-style: italic;
+}
+
+footer span:last-child {
+  font-weight: bold;
+  color: #aaa;
+}
+
+.row {
+  display: flex;
+}
+.row .col {
+  margin: 0px 15px;
+}
+.contact-links,
+.explore-links {
+  text-align: left;
+  > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    > a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 15px 8px;
+    }
+  }
+}
+
+input[type="email"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0px;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  color: white;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+  border-bottom: 2px solid #ccc;
+}
+.contact-btn {
+  width: 50%;
+  padding: 16px 0px;
+  margin: 15px 0px 5px 0px;
+  align-self: center;
+  border-radius: 25px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    text-align: left;
+  }
+  .container .col:nth-of-type(1),
+  .container .col:nth-of-type(2) {
+    margin: 0px 10px;
+  }
+  /* .container .col {
+    padding: 10px;
+  } */
+  .row {
+    margin: 10px;
+    justify-content: center;
+  }
+}

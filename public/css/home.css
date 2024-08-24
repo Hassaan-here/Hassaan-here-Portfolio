@@ -1,14 +1,14 @@
 /* home Section Styles */
-.home {
+.hero {
   display: flex; /* Center content vertically */
   flex-direction: column;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically and horizontally */
-  min-height: 100vh; /* Ensure section fills viewport height */
+  min-height: 80vh; /* Ensure section fills viewport height */
   text-align: center; /* Center text within section */
 }
 
-.home-content {
+.hero-content {
   max-width: 800px; /* Limit content width on larger screens */
   padding: 1.5rem;
 }
@@ -20,16 +20,15 @@
   text-align: center;
   margin-bottom: 1rem;
 }
-.home p {
+.hero p {
   color: #fff;
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
 
-.btn {
-  /* Style your button here (optional) */
-  background-color: rgb(230, 34, 77);
+.hero-btn {
+  background-color: #d32f2f;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -39,7 +38,7 @@
   margin-top: 2rem;
 }
 
-.home .btn:hover,
+.hero .btn:hover,
 .services .btn:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.2s;

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./public/css/home.css" />
     <link rel="stylesheet" href="./public/css/about.css" />
     <link rel="stylesheet" href="./public/css/skills.css" />
+    <link rel="stylesheet" href="./public/css/footer.css" />
     <link rel="stylesheet" href="./public/css/animation.css" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,126 +31,97 @@
   </head>
 
   <body>
-    <section class="navigation">
-      <header class="header">
-        <h1 class="gradient-text">Hassaan</h1>
-        <label class="burger" for="burger">
+    <header>
+      <h1 class="gradient-text">Hassaan</h1>
+      <label class="burger" for="burger">
+        <input
+          type="checkbox"
+          id="burger"
+          aria-expanded="false"
+          aria-controls="navigation"
+        />
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="navbar" id="navbar">
+        <label class="cross" for="cross">
           <input
             type="checkbox"
-            id="burger"
-            aria-expanded="false"
+            id="cross"
+            aria-expanded="true"
             aria-controls="navigation"
           />
           <span></span>
           <span></span>
-          <span></span>
         </label>
-        <nav class="navbar" id="navbar">
-          <label class="cross" for="cross">
-            <input
-              type="checkbox"
-              id="cross"
-              aria-expanded="true"
-              aria-controls="navigation"
-            />
-            <span></span>
-            <span></span>
-          </label>
-          <ul>
-            <li>
-              <a href="#"><span class="fas fa-home"></span>HOME</a>
-            </li>
-            <li>
-              <a href="#"><span class="fas fa-info-circle"></span> ABOUT</a>
-            </li>
-            <li>
-              <a href="#"><span class="fas fa-cogs"></span>SKILLS</a>
-            </li>
-            <li>
-              <a href="#"><span class="fas fa-address-card"></span>CONTACT</a>
-            </li>
-            <button class="Btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 384 512"
-                class="svgIcon"
-              >
-                <path
-                  d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
-                ></path>
-              </svg>
-              <span class="icon2"></span>
-            </button>
-          </ul>
-        </nav>
-      </header>
-    </section>
+        <ul>
+          <li>
+            <a href="#home"><span class="fas fa-home"></span>HOME</a>
+          </li>
+          <li>
+            <a href="#about"><span class="fas fa-info-circle"></span> ABOUT</a>
+          </li>
+          <li>
+            <a href="#skills"><span class="fas fa-cogs"></span>SKILLS</a>
+          </li>
+          <li>
+            <a href="#contact"
+              ><span class="fas fa-address-card"></span>CONTACT</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="resume-button-container">
+        <button class="resume-button">
+          Resume
+          <span
+            ><img
+              src="./public/images/download.png"
+              alt=""
+              style="width: 30px; height: 25px"
+          /></span>
+        </button>
+      </div>
+    </header>
 
     <!-- Home -->
-    <section class="home">
-      <div class="home-content hidden">
-        <h2 class="gradient-text">Hi,<span class="typed-text"></span></h2>
-        <p>
-          I am a passionate Full stack web developer based in Gujranwala,
-          Pakistan. <br />I specialize in creating user-friendly and visually
-          appealing websites and applications.
-        </p>
+    <section id="home">
+      <div class="container hero">
+        <div class="home-content hidden">
+          <h2 class="gradient-text">Hi,<span class="typed-text"></span></h2>
+          <p>
+            I am a passionate Full stack web developer based in Gujranwala,
+            Pakistan. <br />I specialize in creating user-friendly and visually
+            appealing websites and applications.
+          </p>
+        </div>
       </div>
-      <a href="#work" class="btn">See My Work</a>
+      <!-- <a href="#work" class="hero-btn">See My Work</a> -->
     </section>
 
     <!-- About -->
-    <section class="about">
-      <div class="about-content hidden">
-        <h2 class="gradient-text">About Me</h2>
-        <p>
-          I'm currently pursuing my BS in Computer Science at the University of
-          the Punjab. With a strong foundation in front-end and back-end
-          development. I am passionate about creating user-friendly and visually
-          appealing websites and applications.
-        </p>
-        <p>
-          In addition to technical skills, I value teamwork, communication, and
-          continuous learning.
-        </p>
+    <section id="about">
+      <div class="container about">
+        <div class="about-content hidden">
+          <h2 class="gradient-text">About Me</h2>
+          <p>
+            I'm currently pursuing my BS in Computer Science at the University
+            of the Punjab. With a strong foundation in front-end and back-end
+            development. I am passionate about creating user-friendly and
+            visually appealing websites and applications.
+          </p>
+          <p>
+            In addition to technical skills, I value teamwork, communication,
+            and continuous learning.
+          </p>
+        </div>
       </div>
-      <a href="#work" class="btn">See My Work</a>
+      <!-- <a href="#work" class="about-btn">See My Work</a> -->
     </section>
-    <!-- services
-    <section class="services hidden">
-      <h2>WHAT I DO</h2>
-      <div class="services-container">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <p class="title">Front-End</p>
-              <p>Hover Me</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="title">BACK</p>
-              <p>Leave Me</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <p class="title">Back-End</p>
-              <p>Hover Me</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="title">BACK</p>
-              <p>Leave Me</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="#contact" class="btn">Let's Collaborate</a>
-    </section> -->
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <!-- <section id="skills">
       <div class="container">
         <h2>Skills</h2>
         <div class="skills-list">
@@ -180,34 +152,69 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
+    <!-- Footer -->
+    <footer id="contact">
       <div class="container">
-        <h2>Contact Me</h2>
-        <p>
-          Feel free to reach out to me for collaborations, job opportunities, or
-          just to say hello!
-        </p>
-        <div class="contact-links">
-          <a href="mailto:youremail@example.com"
-            ><i class="fas fa-envelope"></i> Email</a
+        <div class="col">
+          <h3 class="gradient-text">HASSAAN</h3>
+          <span>Turning ideas into elegant, efficient solutions.</span>
+          <span>Your vision, my code—let’s build something great.</span>
+        </div>
+        <div class="col">
+          <h3>CONTACT ME</h3>
+          <span>
+            Feel free to reach out to me for collaborations,<br />
+            job opportunities, or just to say hello!</span
           >
-          <a href="https://linkedin.com/your-profile" target="_blank"
-            ><i class="fab fa-linkedin"></i> LinkedIn</a
-          >
-          <a href="https://github.com/yourusername" target="_blank"
-            ><i class="fab fa-github"></i> GitHub</a
-          >
+          <input type="email" placeholder="Your Email Address" />
+          <input type="text" placeholder="Leave a message" />
+          <button class="contact-btn">Send</button>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3>GET IN TOUCH</h3>
+            <div class="contact-links">
+              <ul>
+                <li><a href="mailto:youremail@example.com"> Email</a></li>
+                <li>
+                  <a href="https://linkedin.com/your-profile" target="_blank">
+                    LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/yourusername" target="_blank">
+                    GitHub</a
+                  >
+                </li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <h3>EXPLORE</h3>
+            <div class="explore-links">
+              <ul>
+                <li>
+                  <a href="#home">HOME</a>
+                </li>
+                <li>
+                  <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                  <a href="#skills">SKILLS</a>
+                </li>
+                <li>
+                  <a href="#projects">PROJECTS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-      </div>
+      <hr />
+      <p>&copy; 2024 HASSAAN MUNEER. All rights reserved.</p>
     </footer>
 
     <!--Script -->
