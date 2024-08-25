@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("load", function () {
+    document.querySelector("header").classList.add("show");
+  });
+
   // burger toggle button
   const burger = document.querySelector('.burger input[type="checkbox"]'); // Efficient combined selector
   const navbar = document.getElementById("navbar");

@@ -2,10 +2,21 @@ header {
   display: flex;
   align-items: center;
   padding: 0.5rem 0.5rem;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  transition: top 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+/* Show the header after page load */
+header.show {
+  top: 0;
 }
 /* Gradient text for H1 */
 .gradient-text {
-  font-size: 3em;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   -webkit-background-clip: text;
   color: transparent;
@@ -19,13 +30,14 @@ header {
 .burger {
   position: fixed;
   top: 0;
-  right: -5%;
-  margin: 50px;
-  width: 40px;
-  height: 30px;
+  right: 0%;
+  margin: 30px;
+  width: 30px;
+  height: 20px;
   background: transparent;
   cursor: pointer;
   display: none;
+  z-index: 1000;
 }
 
 .burger input {
@@ -67,13 +79,14 @@ header {
 .cross {
   position: fixed;
   top: 0;
-  right: -5%;
-  margin: 50px;
-  width: 40px;
-  height: 30px;
+  right: 0;
+  margin: 30px;
+  width: 30px;
+  height: 20px;
   background: transparent;
   cursor: pointer;
   display: none;
+  /* z-index: 1000; */
 }
 .cross input {
   display: none;
@@ -83,7 +96,7 @@ header {
   position: absolute;
   height: 4px;
   width: 100%;
-  background: white;
+  background: red;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -178,6 +191,8 @@ ul li a {
   .burger,
   .cross {
     display: block;
+    top: 8%;
+    right: -3%;
   }
   .navbar {
     position: fixed;

@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically and horizontally */
-  min-height: 80vh; /* Ensure section fills viewport height */
+  min-height: 100vh; /* Ensure section fills viewport height */
   text-align: center; /* Center text within section */
 }
 

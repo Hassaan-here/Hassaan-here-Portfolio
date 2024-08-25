@@ -13,3 +13,19 @@ p,
 a {
   color: #f5f5f5;
 }
+/* WebKit-based browsers */
+/* ::-webkit-scrollbar {
+  width: 3px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: black !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d32f2f !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d32f2f !important;
+} */
