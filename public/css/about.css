@@ -12,7 +12,7 @@
   max-width: 800px; /* Limit content width on larger screens */
   padding: 1.5rem;
 }
-.gradient-text {
+.about-gradient-text {
   font-size: 3em;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   -webkit-background-clip: text;
