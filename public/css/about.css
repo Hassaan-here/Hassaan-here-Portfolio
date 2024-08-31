@@ -1,46 +1,60 @@
 /* about Section Styles */
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.about-section {
+  padding: 50px 0;
   min-height: 100vh;
-  text-align: center;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about-content {
-  max-width: 800px; /* Limit content width on larger screens */
-  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.about-gradient-text {
-  font-size: 3em;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  -webkit-background-clip: text;
-  color: transparent;
+
+.about-image {
+  flex: 1;
   text-align: center;
-  margin-bottom: 1rem;
-}
-.about p {
-  color: #fff;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+  padding: 20px;
 }
 
-.about-btn {
-  /* Style your button here (optional) */
-  background-color: #d32f2f;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 2rem;
+.profile-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.about .btn:hover,
-.services .btn:hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.2s;
+.about-text {
+  flex: 2;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  /* color: #333; */
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  /* color: #555; */
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    padding: 10px;
+  }
 }

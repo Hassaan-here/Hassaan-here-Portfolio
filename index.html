@@ -28,6 +28,14 @@
     <script src="./public/js/observer.js"></script>
     <!-- typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -57,16 +65,16 @@
         </label>
         <ul>
           <li>
-            <a href="#home"><span class="fas fa-home"></span>HOME</a>
+            <a href="#home">HOME</a>
           </li>
           <li>
-            <a href="#about"><span class="fas fa-info-circle"></span> ABOUT</a>
+            <a href="#about"> ABOUT</a>
           </li>
           <li>
-            <a href="#skills"><span class="fas fa-cogs"></span>SKILLS</a>
+            <a href="#skills">SKILLS</a>
           </li>
           <li>
-            <a href="#contact"><span class="fas fa-phone"></span>CONTACT</a>
+            <a href="#contact">CONTACT</a>
           </li>
         </ul>
       </nav>
@@ -85,37 +93,66 @@
 
     <!-- Home -->
     <section id="home">
-      <div class="container hero">
-        <div class="home-content hidden">
-          <h2 class="gradient-text">Hi,<span class="typed-text"></span></h2>
-          <p>
+      <div class="hero">
+        <div class="hero-content hidden">
+          <p class="gudea-bold">
+            I'm M.Hassaan Muneer <br />
             I am a passionate Full stack web developer based in Gujranwala,
-            Pakistan. <br />I specialize in creating user-friendly and visually
-            appealing websites and applications.
+            Pakistan.
           </p>
+          <p>
+            "I create user-friendly, visually appealing websites and
+            applications. <br />
+            My designs are intuitive and responsive, ensuring a seamless user
+            experience."
+          </p>
+          <div class="hero-button-container">
+            <button class="hero-button">
+              Resume
+              <span
+                ><img
+                  src="./public/images/download.png"
+                  alt=""
+                  style="width: 30px; height: 25px"
+              /></span>
+            </button>
+          </div>
         </div>
       </div>
-      <!-- <a href="#work" class="hero-btn">See My Work</a> -->
     </section>
 
     <!-- About -->
-    <section id="about">
-      <div class="container about">
-        <div class="about-content hidden">
-          <h2 class="about-gradient-text">About Me</h2>
-          <p>
-            I'm currently pursuing my BS in Computer Science at the University
-            of the Punjab. With a strong foundation in front-end and back-end
-            development. I am passionate about creating user-friendly and
-            visually appealing websites and applications.
-          </p>
-          <p>
-            In addition to technical skills, I value teamwork, communication,
-            and continuous learning.
-          </p>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              Hello! I'm Hassaan, a passionate web developer with a strong
+              foundation in both front-end and back-end technologies. Currently
+              pursuing a BS in Computer Science at the University of the Punjab,
+              I love creating user-friendly and visually appealing websites and
+              applications. My skills include HTML, CSS, JavaScript, PHP, MySQL,
+              Laravel, and more. I value continuous learning, teamwork, and
+              clear communication, always striving to deliver high-quality work.
+            </p>
+            <p>
+              Whether working on a personal project or collaborating in a team,
+              I am committed to turning ideas into reality through code. Explore
+              my portfolio to see some of my recent work and feel free to reach
+              out if you'd like to connect!
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="./public/images/undraw_programming_re_kg9v.svg"
+              alt="Programming Illustration"
+              class="profile-img"
+            />
+          </div>
         </div>
       </div>
-      <!-- <a href="#work" class="about-btn">See My Work</a> -->
     </section>
 
     <!-- Skills Section -->
@@ -212,7 +249,7 @@
         </div>
       </div>
       <hr />
-      <p>&copy; 2024 HASSAAN MUNEER. All rights reserved.</p>
+      <p>made with ❤️by HASSAAN MUNEER.</p>
     </footer>
 
     <!--Script -->
